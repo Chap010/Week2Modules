@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Class_Week_2
 {
@@ -13,9 +14,9 @@ namespace Class_Week_2
             DateTime covid19Ending = DateTime.Now;
             int pandemicDays = DateTime.Compare(covid19Start, covid19Ending);
             Console.WriteLine("Comparing covid dates from start to present and the value is " + pandemicDays);
-            Console.WriteLine("Hey "+ bossName +" the pandemic started on " + covid19Start + " and todays date is " + covid19Ending.ToString("MMMM/f/yyyy") + " and the pandemic still active. ");
-            
-            
+            Console.WriteLine("Hey " + bossName + " the pandemic started on " + covid19Start + " and todays date is " + covid19Ending.ToString("MMMM/f/yyyy") + " and the pandemic still active. ");
+
+
 
             DateTime fecha1 = new DateTime(1954, 01, 01);
             DateTime fecha2 = new DateTime(1998, 01, 01);
@@ -34,7 +35,7 @@ namespace Class_Week_2
 
 
             int fechasFormula = 1998 - 1954;
-            Console.WriteLine("The Difference between the two dates is " + fechasFormula + " years.");
+            Console.WriteLine("The Difference Between The Two Dates Is " + fechasFormula + " Years.");
             // _ = Console.ReadLine();//
 
 
@@ -58,10 +59,42 @@ namespace Class_Week_2
 
 
             int fechasFormula2 = 2010 - 1998;
-            Console.WriteLine("The Difference between the two dates is " + fechasFormula2 + " years.");
+            Console.WriteLine("The Difference Between Yhe Two Dates Is " + fechasFormula2 + " Years.");
+
+
+
+            //////////////   Looping /////////////
+
+            int num = 1;
+            while (num <= 250)
+
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine(num);
+                
+                num++;
+            }
+
+            
+            int[] num2 = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 16, 17, 18, 19, 20 };
+            int endingNum = 250;
+            for (int suma = 1; suma == endingNum; suma++)
+            {
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.WriteLine("Number = " + num2[suma]);
+            }
+            
+
+
         }
-        }
-    }
+
+    }      
+
+}
+
+
+
+
 
 
 
