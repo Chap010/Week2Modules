@@ -5,6 +5,8 @@ namespace Class_Week_2
 {
     class Program
     {
+        private static object CODE;
+
         static void Main(string[] args)
         {
 
@@ -25,7 +27,7 @@ namespace Class_Week_2
 
             {
                 Console.WriteLine("01/01/1998 is not the greater date!");
-            }
+            } 
 
 
             else if (fecha1 <= fecha2)
@@ -63,10 +65,12 @@ namespace Class_Week_2
 
 
 
-            //////////////   Looping /////////////
+            //////////////   Looping /////////////   
 
-            int num = 1;
-            while (num <= 250)
+
+
+            int num = 1;                                       //Fix loop number to 210
+            while (num <= 210)
 
             {
                 Console.ForegroundColor = ConsoleColor.Green;
@@ -74,22 +78,25 @@ namespace Class_Week_2
                 
                 num++;
             }
+           
 
-            
+           /* 
             int[] num2 = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 16, 17, 18, 19, 20 };
-            int endingNum = 250;
+            int endingNum = 210;
             for (int suma = 1; suma == endingNum; suma++)
             {
                 Console.ForegroundColor = ConsoleColor.Blue;
                 Console.WriteLine("Number = " + num2[suma]);
-            }
-            
 
+            }
+           */
 
         }
 
-    }      
+    }
 
+   
+    
 }
 
 
